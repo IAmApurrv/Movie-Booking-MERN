@@ -1,5 +1,10 @@
 # MERN Movie Booking Project
 
+[About](#about) | [Running the Project](#running-the-project) | [Screenshots](#screenshots) | [Dependencies](#dependencies) | [Usage](#usage) | [Folder Structure](#folder-structure)
+
+
+
+## About
 This is a full-stack movie booking project developed using the MERN (MongoDB, Express.js, React.js, Node.js) stack. The project consists of two modules: Admin and User. The Admin module allows administrators to add and delete movies, while the User module enables users to sign up, log in, book movies, view movie details, delete bookings, and delete their accounts.
 
 
@@ -60,6 +65,32 @@ Once both servers are running, you can access the application through your web b
 
 
 
+## Screenshots
+
+![Home](./screenshots/Home.png)
+
+![Admin Authentication](./screenshots/Admin-Authentication.png)
+
+![Add Movie](./screenshots/Add-Movie.png)
+
+![Admin Dashboard](./screenshots/Admin-Dashboard.png)
+
+![Delete Movie Confirmation](./screenshots/Delete-Movie-Confirmation.png)
+
+![User Signup](./screenshots/User-Signup.png)
+
+![User Login](./screenshots/User-Login.png)
+
+![All Movies](./screenshots/All-Movies.png)
+
+![Movie Details Booking](./screenshots/Movie-Details-Booking.png)
+
+![User Dashboard](./screenshots/User-Dashboard.png)
+
+![Delete Booking Confirmation](./screenshots/Delete-Booking-Confirmation.png)
+
+![Delete Account Confirmation](./screenshots/Delete-Account-Confirmation.png)
+
 
 
 ## Dependencies
@@ -85,6 +116,8 @@ Once both servers are running, you can access the application through your web b
 - **react-redux**: Official React bindings for Redux state management.
 - **@reduxjs/toolkit**: Utility package for efficient Redux development.
 
+
+
 ## Usage
 
 ### Admin Module
@@ -96,8 +129,11 @@ Once both servers are running, you can access the application through your web b
 - Sign up for a new account.
 - Log in to book movies.
 - View movie details.
+- Book a movie.
 - Delete bookings.
 - Delete user account.
+
+
 
 ## Folder Structure
 
@@ -127,4 +163,5 @@ mern-movie-booking/
 ├── .gitignore              # Specifies intentionally untracked files to ignore
 └── README.md               # Project documentation
 ```
+
 
