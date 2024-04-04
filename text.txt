@@ -1,0 +1,13 @@
+backend -->
+    npm init
+    npm install nodemon express mongoose dotenv bcryptjs jsonwebtoken cors
+
+
+frontend -->
+    npm i react-material-ui-carousel
+    npm install @mui/material @emotion/react @emotion/styled
+    npm install @mui/icons-material
+    npm install react-router-dom
+    npm install axios
+    npm install react-redux
+    npm install @reduxjs/toolkit
