@@ -67,29 +67,29 @@ Once both servers are running, you can access the application through your web b
 
 ## Screenshots
 
-- **Home**: ![Home](screenshots/Home.png)
+- **Home**: ![Home](Screenshots/Home.png)
 
-- **Admin Authentication**: ![Admin Authentication](screenshots/Admin-Authentication.png)
+- **Admin Authentication**: ![Admin Authentication](Screenshots/Admin-Authentication.png)
 
-- **Add Movie**: ![Add Movie](screenshots/Add-Movie.png)
+- **Add Movie**: ![Add Movie](Screenshots/Add-Movie.png)
 
-- **Admin Dashboard**: ![Admin Dashboard](screenshots/Admin-Dashboard.png)
+- **Admin Dashboard**: ![Admin Dashboard](Screenshots/Admin-Dashboard.png)
 
-- **Delete Movie Confirmation**: ![Delete Movie Confirmation](screenshots/Delete-Movie-Confirmation.png)
+- **Delete Movie Confirmation**: ![Delete Movie Confirmation](Screenshots/Delete-Movie-Confirmation.png)
 
-- **User Signup**: ![User Signup](screenshots/User-Signup.png)
+- **User Signup**: ![User Signup](Screenshots/User-Signup.png)
 
-- **User Login**: ![User Login](screenshots/User-Login.png)
+- **User Login**: ![User Login](Screenshots/User-Login.png)
 
-- **All Movies**: ![All Movies](screenshots/All-Movies.png)
+- **All Movies**: ![All Movies](Screenshots/All-Movies.png)
 
-- **Movie Details Booking**: ![Movie Details Booking](screenshots/Movie-Details-Booking.png)
+- **Movie Details Booking**: ![Movie Details Booking](Screenshots/Movie-Details-Booking.png)
 
-- **User Dashboard**: ![User Dashboard](screenshots/User-Dashboard.png)
+- **User Dashboard**: ![User Dashboard](Screenshots/User-Dashboard.png)
 
-- **Delete Booking Confirmation**: ![Delete Booking Confirmation](screenshots/Delete-Booking-Confirmation.png)
+- **Delete Booking Confirmation**: ![Delete Booking Confirmation](Screenshots/Delete-Booking-Confirmation.png)
 
-- **Delete Account Confirmation**: ![Delete Account Confirmation](screenshots/Delete-Account-Confirmation.png)
+- **Delete Account Confirmation**: ![Delete Account Confirmation](Screenshots/Delete-Account-Confirmation.png)
 
 
 
