@@ -67,29 +67,29 @@ Once both servers are running, you can access the application through your web b
 
 ## Screenshots
 
-![Home](./screenshots/Home.png)
+- **Home**: ![Home](screenshots/Home.png)
 
-![Admin Authentication](./screenshots/Admin-Authentication.png)
+- **Admin Authentication**: ![Admin Authentication](screenshots/Admin-Authentication.png)
 
-![Add Movie](./screenshots/Add-Movie.png)
+- **Add Movie**: ![Add Movie](screenshots/Add-Movie.png)
 
-![Admin Dashboard](./screenshots/Admin-Dashboard.png)
+- **Admin Dashboard**: ![Admin Dashboard](screenshots/Admin-Dashboard.png)
 
-![Delete Movie Confirmation](./screenshots/Delete-Movie-Confirmation.png)
+- **Delete Movie Confirmation**: ![Delete Movie Confirmation](screenshots/Delete-Movie-Confirmation.png)
 
-![User Signup](./screenshots/User-Signup.png)
+- **User Signup**: ![User Signup](screenshots/User-Signup.png)
 
-![User Login](./screenshots/User-Login.png)
+- **User Login**: ![User Login](screenshots/User-Login.png)
 
-![All Movies](./screenshots/All-Movies.png)
+- **All Movies**: ![All Movies](screenshots/All-Movies.png)
 
-![Movie Details Booking](./screenshots/Movie-Details-Booking.png)
+- **Movie Details Booking**: ![Movie Details Booking](screenshots/Movie-Details-Booking.png)
 
-![User Dashboard](./screenshots/User-Dashboard.png)
+- **User Dashboard**: ![User Dashboard](screenshots/User-Dashboard.png)
 
-![Delete Booking Confirmation](./screenshots/Delete-Booking-Confirmation.png)
+- **Delete Booking Confirmation**: ![Delete Booking Confirmation](screenshots/Delete-Booking-Confirmation.png)
 
-![Delete Account Confirmation](./screenshots/Delete-Account-Confirmation.png)
+- **Delete Account Confirmation**: ![Delete Account Confirmation](screenshots/Delete-Account-Confirmation.png)
 
 
 
