@@ -1,5 +1,6 @@
 import Booking from "../models/Booking.js";
 import User from "../models/User.js";
+import Movie from "../models/Movie.js";
 import bcrypt from "bcryptjs"
 
 // export const signup = async (req, res, next) => {
@@ -143,8 +144,13 @@ export const deleteUser = async (req, res, next) => {
         if (!user) {
             return res.status(404).json({ message: "User not found" });
         }
+        
         // Delete all bookings associated with the user
         await Booking.deleteMany({ user: id });
+        
+        // Remove bookings from movies collection
+        await Movie.updateMany({ "bookings": { $in: user.bookings } }, { $pull: { "bookings": { $in: user.bookings } } });
+
         // Now delete the user
         await User.findByIdAndDelete(id);
         return res.status(200).json({ message: "User and associated bookings deleted successfully." });

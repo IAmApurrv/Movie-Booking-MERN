@@ -44,7 +44,7 @@ const AuthForm = ({ onSubmit, isAdmin }) => {
                     </IconButton>
                 </Box>
             </Box>
-            <Typography variant='h4' textAlign="center" sx={{ color: "#17a2b8", fontWeight: "bold", textTransform: "capitalize" }} >
+            <Typography variant='h4' textAlign="center" sx={{ color: "#17a2b8", fontWeight: "bold", textTransform: "capitalize",  }} >
                 {isSignUp ? "Signup" : "Login"}
             </Typography>
             <form onSubmit={handleSubmit}>

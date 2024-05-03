@@ -37,7 +37,8 @@ const HomePage = () => {
 
     const data = [
         "https://stat5.bollywoodhungama.in/wp-content/uploads/2017/07/Karwaan-4.jpg",
-        "https://pbs.twimg.com/profile_banners/2414206130/1711973242/1500x500",
+        // "https://pbs.twimg.com/profile_banners/2414206130/1711973242/1500x500",
+        "https://assets-in.bmscdn.com/discovery-catalog/events/et00344265-sjtavpswzr-landscape.jpg",
         "https://stat5.bollywoodhungama.in/wp-content/uploads/2020/08/Tiger-3-3.jpg",
         "https://stat4.bollywoodhungama.in/wp-content/uploads/2020/10/Bhediya-5.jpg",
         "https://media5.bollywoodhungama.in/wp-content/uploads/2016/03/Manmarziyaan-4.jpg"
