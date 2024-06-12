@@ -23,7 +23,7 @@ const Admin = () => {
   }
 
   const getData = (data) => {
-    console.log("Admin", data);
+    // console.log("Admin", data);
     sendAdminAuthRequest(data.inputs)
       .then(onResReceived)
       .catch((error) => console.log(error))

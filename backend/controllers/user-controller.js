@@ -144,10 +144,10 @@ export const deleteUser = async (req, res, next) => {
         if (!user) {
             return res.status(404).json({ message: "User not found" });
         }
-        
+
         // Delete all bookings associated with the user
         await Booking.deleteMany({ user: id });
-        
+
         // Remove bookings from movies collection
         await Movie.updateMany({ "bookings": { $in: user.bookings } }, { $pull: { "bookings": { $in: user.bookings } } });
 
@@ -159,7 +159,6 @@ export const deleteUser = async (req, res, next) => {
         return res.status(500).json({ message: "Something went wrong." });
     }
 }
-
 
 export const getBookingsofUser = async (req, res, next) => {
     const id = req.params.id;

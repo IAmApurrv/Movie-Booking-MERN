@@ -25,7 +25,7 @@ const AuthForm = ({ onSubmit, isAdmin }) => {
 
     const handleSubmit = (e) => {
         e.preventDefault(); // to prevent refresh
-        console.log(inputs);
+        // console.log(inputs);
         onSubmit({ inputs, signup: isAdmin ? false : isSignUp });
 
         setInput({
@@ -44,11 +44,11 @@ const AuthForm = ({ onSubmit, isAdmin }) => {
                     </IconButton>
                 </Box>
             </Box>
-            <Typography variant='h4' textAlign="center" sx={{ color: "#17a2b8", fontWeight: "bold", textTransform: "capitalize",  }} >
+            <Typography variant='h4' textAlign="center" sx={{ color: "#17a2b8", fontWeight: "bold", textTransform: "capitalize", }} >
                 {isSignUp ? "Signup" : "Login"}
             </Typography>
             <form onSubmit={handleSubmit}>
-                <Box margin={"auto"} alignContent={"center"} padding={6} display="flex" justifyContent="center" flexDirection="column" width={400} mx="auto" >
+                <Box margin={"auto"} alignContent={"center"} padding={4} display="flex" justifyContent="center" flexDirection="column" width={400} mx="auto"  >
 
                     {!isAdmin && isSignUp && (
                         <>
@@ -79,8 +79,8 @@ const AuthForm = ({ onSubmit, isAdmin }) => {
                         <Button
                             onClick={() => setIsSignup(!isSignUp)}
                             sx={{
-                                mt: 2, borderRadius: 10, bgcolor: "transparent", color: "#17a2b8", textDecoration: "underline", cursor: "pointer",
-                                "&:hover": { color: "#28a745" }
+                                mt: 2, borderRadius: 10, bgcolor: "transparent", color: "#17a2b8", cursor: "pointer",
+                                "&:hover": { color: "#28a745", textDecoration: "underline" }
                             }}
                             fullWidth
                         >

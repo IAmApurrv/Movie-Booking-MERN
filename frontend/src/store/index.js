@@ -33,6 +33,8 @@ const adminSlice = createSlice({
 
 export const userActions = userSlice.actions;
 export const adminActions = adminSlice.actions;
+
+
 export const store = configureStore({
     reducer: {
         user: userSlice.reducer,

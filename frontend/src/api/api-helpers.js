@@ -47,7 +47,7 @@ export const sendAdminAuthRequest = async (data) => {
   return resData;
 };
 
-export const getMoviesDetails = async (id) => {
+export const getMovieDetails = async (id) => {
   const res = await axios.get(`/movie/${id}`).catch((error) => console.log(error));
   if (res.status !== 200) {
     return console.log("Error Occured");
@@ -85,7 +85,7 @@ export const getUserBooking = async () => {
   const resData = await res.data;
 
   const populatedBookings = await Promise.all(resData.bookings.map(async (booking) => {
-    const movieDetails = await getMoviesDetails(booking.movie);
+    const movieDetails = await getMovieDetails(booking.movie);
     return { ...booking, movie: movieDetails };
   }));
 

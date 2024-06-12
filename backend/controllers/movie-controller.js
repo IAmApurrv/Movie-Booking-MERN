@@ -71,7 +71,6 @@ export const addMovie = async (req, res, next) => {
     }
 };
 
-
 export const addMovie2 = async (req, res, next) => {
     const extractedToken = req.headers.authorization.split(" ")[1];   // jwt token of perticular Admin is added in postman --> Authorization --> Bearer Token
     if (!extractedToken && extractedToken.trim() === "") {
@@ -185,7 +184,6 @@ export const deleteMovieById = async (req, res, next) => {
         session = await mongoose.startSession();
         session.startTransaction();
 
-        // Delete the movie
         const movie = await Movie.findById(movieId).session(session);
         if (!movie) {
             await session.abortTransaction();

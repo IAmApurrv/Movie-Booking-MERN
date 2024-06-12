@@ -30,6 +30,7 @@ app.use("/booking", bookingRouter);
 
 mongoose.connect(
     `mongodb+srv://root:${process.env.mongoPass}@bookstore-mern.v4ejn78.mongodb.net/?retryWrites=true&w=majority&appName=BookStore-MERN`
+    // 'mongodb://localhost:27017/moviebooking'
 )
     .then(() =>
         app.listen(5000, () =>

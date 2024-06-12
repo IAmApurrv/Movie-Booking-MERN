@@ -25,6 +25,16 @@ const AdminProfile = () => {
       .catch((err) => console.log(err));
   }, []);
 
+  const formatDate = (dateString) => {
+    const dateObject = new Date(dateString);
+    // const day = dateObject.toLocaleDateString(undefined, { weekday: 'long' });
+    const dayOfMonth = dateObject.toLocaleDateString(undefined, { day: 'numeric' });
+    const month = dateObject.toLocaleDateString(undefined, { month: 'long' });
+    const year = dateObject.toLocaleDateString(undefined, { year: 'numeric' });
+
+    return `${dayOfMonth} ${month} ${year}`;
+  };
+
   // delete movie
   const handleDeleteMovie = (id) => {
     setMovieToDelete(id);
@@ -80,7 +90,7 @@ const AdminProfile = () => {
                       Director: {movie.director}
                     </Typography>
                     <Typography>
-                      Release Date: {new Date(movie.releaseDate).toDateString()}
+                      Release Date: {formatDate(movie.releaseDate)}
                     </Typography>
                     <CardActions style={{ marginTop: 'auto' }}>
                       <Button variant="contained" fullWidth color='info' component={Link} to={`/movie-details/${movie._id}`}><VisibilityRoundedIcon />View Details</Button>

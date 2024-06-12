@@ -1,6 +1,6 @@
 import React, { Fragment, useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
-import { getMoviesDetails, newBooking } from '../../api/api-helpers';
+import { getMovieDetails, newBooking } from '../../api/api-helpers';
 import { Box, Button, Card, CardContent, TextField, Typography } from '@mui/material';
 import { useSelector } from "react-redux";
 import ChairIcon from '@mui/icons-material/Chair';
@@ -24,7 +24,7 @@ const MovieDetails = () => {
     }, [movie]);
 
     useEffect(() => {
-        getMoviesDetails(id)
+        getMovieDetails(id)
             .then((res) => setMovie(res))
             .catch((err) => console.log(err));
     }, [id]);
@@ -36,6 +36,16 @@ const MovieDetails = () => {
             ...prevState,
             [e.target.name]: e.target.value,
         }));
+    };
+
+    const formatDate = (dateString) => {
+        const dateObject = new Date(dateString);
+        // const day = dateObject.toLocaleDateString(undefined, { weekday: 'long' });
+        const dayOfMonth = dateObject.toLocaleDateString(undefined, { day: 'numeric' });
+        const month = dateObject.toLocaleDateString(undefined, { month: 'long' });
+        const year = dateObject.toLocaleDateString(undefined, { year: 'numeric' });
+
+        return `${dayOfMonth} ${month} ${year}`;
     };
 
     const handleSeatSelect = (row, col) => {
@@ -72,7 +82,7 @@ const MovieDetails = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // console.log(inputs);
+        console.log(inputs);
         newBooking({ ...inputs, movie: movie._id })
             .then((res) => {
                 console.log(res);
@@ -112,7 +122,7 @@ const MovieDetails = () => {
                                         </Typography>
                                         <Typography variant="subtitle1" component="div" sx={{ color: 'text.secondary', textAlign: 'center', marginBottom: 1 }}>
                                             <span style={{ fontWeight: 'bold', color: 'primary.main' }}>Release Date: </span>
-                                            {new Date(movie.releaseDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+                                            {formatDate(movie.releaseDate)}
                                         </Typography>
                                     </Box>
 

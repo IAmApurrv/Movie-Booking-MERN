@@ -78,7 +78,6 @@ export const getAllAdmins = async (req, res, next) => {
     return res.status(200).json({ admins });
 }
 
-
 export const getAdminById = async (req, res, next) => {
     const id = req.params.id;
     let admin;
